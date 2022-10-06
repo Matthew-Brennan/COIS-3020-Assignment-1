@@ -107,38 +107,47 @@ namespace COIS_3020_Assignment_1
         //find airport by name
         public AirportNode FindAirportName(string name)
         {
+            //iterate though all the nodes
             foreach (AirportNode node in nodes)
             {
+                //check if the current node is the node we're looking for
                 if (node.Name.Equals(name))
                 {
                     return node;
                 }
             }
+            //if the node is not found return null
             return null;
         }
 
         public AirportNode FindAirportCode(string code)
         {
+            //iterate though all the nodes
             foreach (AirportNode node in nodes)
             {
+                //check if the current node is the node we're looking for
                 if (node.Code.Equals(code))
                 {
                     return node;
                 }
             }
+            //if the node is not found return null
             return null;
         }
 
         public bool AddAirport(AirportNode value)
         {
+            //if the airport name is a possible destination already don't add a duplicate
             if (FindAirportName(value.Name) != null)
             {
                 return false;
             }
+            //if the airport code is a possible destination already don't add a duplicate
             if (FindAirportName(value.Code) != null)
             {
                 return false;
             }
+            //add the airport to the list of airports
             else
             {
                 nodes.Add(new AirportNode(value.Name, value.Code));
@@ -172,14 +181,17 @@ namespace COIS_3020_Assignment_1
             AirportNode node1 = origin;
             AirportNode node2 = dest;
 
+            //if the nodes are the same or null, exit
             if (node1 == null || node2 == null || node1.Equals(node2))
             {
                 return false;
             }
+            //if the route exists already, exit. dont allow duplicates
             else if (node1.Destinations.Contains(node2))
             {
                 return false;
             }
+            //add the route, from origin airport to destination airport
             else
             {
                 node1.AddDestination(node2);
@@ -192,14 +204,17 @@ namespace COIS_3020_Assignment_1
         {
             AirportNode node1 = origin;
             AirportNode node2 = dest;
-            if (node1 == null || node2 == null)
+            //if the nodes are the same or null, exit
+            if (node1 == null || node2 == null || node1.Equals(node2))
             {
                 return false;
             }
+            //if the route doesn't exists already, exit.
             else if (!node1.Destinations.Contains(node2))
             {
                 return false;
             }
+            //remove the route, from origin airport to destination airport
             else
             {
                 node1.RemoveDestination(node2);
@@ -208,7 +223,7 @@ namespace COIS_3020_Assignment_1
             }
 
         }
-
+        //format the output string
         public override string ToString()
         {
             string nodesString = "";
@@ -232,15 +247,19 @@ namespace COIS_3020_Assignment_1
                 //this should never happen
                 return "Missing Airport";
             }
+            //the destination is the origin
             else if (origin == destination)
             {
                 return origin.ToString();
             }
             else
             {
+                //frontier queue
                 var queue = new Queue<AirportNode>();
+                //discovered set
                 var previous = new Dictionary<AirportNode, AirportNode>();
 
+                //the first visit, which is the origin
                 queue.Enqueue(origin);
 
                 while (queue.Count > 0)

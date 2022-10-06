@@ -40,21 +40,30 @@ namespace COIS_3020_Assignment_1
 
 
 
-            //airportMap.AddRoute(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Calgary"));
+            airportMap.AddRoute(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Calgary"));
             airportMap.AddRoute(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Winnipeg"));
 
             airportMap.AddRoute(airportMap.FindAirportName("Winnipeg"), airportMap.FindAirportName("Calgary"));
             airportMap.AddRoute(airportMap.FindAirportName("Calgary"), airportMap.FindAirportName("Vancouver"));
             
 
-           // BreadthFirstSearch<RouteMap<AirportNode>>.Search(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Vancouver"), airportMap);
-
-
+            // print out all the airports
             Console.WriteLine(airportMap.ToString());
+
+            //show shortest route from toronto to vancouver in this instance winnipeg should be skipped toronto -> calgary -> vancouver
             Console.WriteLine(airportMap.FastestRoute(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Vancouver")));
+
+            //remove the route from toronto to calgary
+            airportMap.RemoveRoute(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Calgary"));
+
+            //show shortest route from toronto to vancouver in this instance winnipeg should not be skipped toronto -> winnipeg -> calgary -> vancouver
+            Console.WriteLine(airportMap.FastestRoute(airportMap.FindAirportName("Toronto"), airportMap.FindAirportName("Vancouver")));
+
+            //should report no route
             Console.WriteLine(airportMap.FastestRoute(airportMap.FindAirportName("Calgary"), airportMap.FindAirportName("Fredericton")));
 
-
+            //show the new list of airports and destinations with calgary removed from toronto as a destination
+            Console.WriteLine(airportMap.ToString());
 
 
 
