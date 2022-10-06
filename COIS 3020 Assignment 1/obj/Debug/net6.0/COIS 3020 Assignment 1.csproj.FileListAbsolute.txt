@@ -1,0 +1,15 @@
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\bin\Debug\net6.0\COIS 3020 Assignment 1.exe
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\bin\Debug\net6.0\COIS 3020 Assignment 1.deps.json
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\bin\Debug\net6.0\COIS 3020 Assignment 1.runtimeconfig.json
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\bin\Debug\net6.0\COIS 3020 Assignment 1.dll
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\bin\Debug\net6.0\COIS 3020 Assignment 1.pdb
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.csproj.AssemblyReference.cache
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.AssemblyInfoInputs.cache
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.AssemblyInfo.cs
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.csproj.CoreCompileInputs.cache
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.dll
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\refint\COIS 3020 Assignment 1.dll
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.pdb
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\COIS 3020 Assignment 1.genruntimeconfig.cache
+E:\Programming\C#\COIS 3020 Assignment 1\COIS 3020 Assignment 1\obj\Debug\net6.0\ref\COIS 3020 Assignment 1.dll
